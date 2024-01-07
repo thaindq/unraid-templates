@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PortainerCE</Name>
+  <Repository>portainer/portainer-ce</Repository>
+  <Registry>https://hub.docker.com/r/portainer/portainer-ce</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.portainer.io/</Project>
+  <Overview>Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. It is designed to be as simple to deploy as it is to use. The application allows you to manage all your orchestrator resources (containers, images, volumes, networks and more) through a &#x2018;smart&#x2019; GUI and/or an extensive API.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://static-00.iconduck.com/assets.00/portainer-icon-1465x2048-t155ekm0.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704631285</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="8000" Default="" Mode="tcp" Description="TCP tunnel server port" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Host Port 2" Target="9000" Default="" Mode="tcp" Description="WebUI port" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="Host Port 3" Target="9443" Default="" Mode="tcp" Description="Secure WebUI port" Type="Port" Display="always" Required="false" Mask="false">9443</Config>
+  <Config Name="Host Path 1" Target="/var/run/docker.sock" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="Host Path 2" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/portainer/</Config>
+  <Config Name="Host Path 3" Target="/etc/localtime" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
+</Container>
